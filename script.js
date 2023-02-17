@@ -24,17 +24,6 @@ const EmailValid = function (inputEmail) {
     }
 }
 
-// age
-form.age.addEventListener("change", verifier);
-
-        function verifier() {
-            let age = document.getElementById("age").value;
-            if (age <= 10 || age >= 100)
-                alert(" âge compris entre 10 et 100 ans");
-            else
-                alert("Vous avez : " + age + " ans");
-        }
-
 
 
 // nom 
