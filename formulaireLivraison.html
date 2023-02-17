@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury-kitchen</title>
+    <!--link css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-----cdn font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="script.js" defer></script>
+head>
+  <header>
+    <div class="container">
+      <!-------container : contient le header -->
+      <nav class="nav_checkbox">
+        <!--------nav-->
+        <p class="logo">LUXURY KITCHEN</p>
+        <!-----Logo-->
+        <div class="profil">
+          <a href="#">
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+        <!----profile user-->
+        <input type="checkbox" id="tab-nav" class="tab-nav">
+        <label for="tab-nav" class="label">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <!---label hamburger-->
+        </label>
+        <ul class="content_nav">
+          <li>
+            <a href="inscription.html">
+              <i class="fas fa-id-card-clip" id="fa"></i>S'identifier</a>
+          </li>
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="poeles.html">Poèles</a>
+          </li>
+          <li>
+            <a href="verres.html">Verres</a>
+          </li>
+          <li>
+            <a href="accessoires.html">Accessoires</a>
+          </li>
+          <li>
+            <a href="couverts.html">Couverts</a>
+          </li>
+          <li>
+            <a href="assiettes.html">Assiettes</a>
+          </li>
+          <li>
+            <a href="moules.html">Moules et Plaques</a>
+          </li>
+        </ul>
+        <!-------les liens de nav -->
+        </nav>
+    </div>
+    <section class="content_section">
+    </section>
+  </header>
+  <body>
+    <h1 class="compte">Adresse de livraison
+      <i class="fas fa-chevron-down" id="chevron"></i>
+    </h1>
+    <h1 class="connect">
+      Indiquez votre adresse d'expidétion 
+    </h1>
+    <form action="traitement.php" method="post" id="forms">
+      <label for="pays"></label>
+      <select name="pays" id="pays">
+        <optgroup label="pays">
+        <option value="fr">France</option>
+        <option value="it">Italy</option>
+        <option value="es">spain</option>
+        </optgroup>
+      </select>
+      <label for="nom"></label>
+      <input type="text" name="nom" id="nom" placeholder="nom" pattern=" " required>
+      <span id="error"></span>
+      <small></small>
+      <label for="tel"></label>
+      <input type="text" name="tel" id="tel" placeholder="telephone"  pattern="^(\\+33|0|0033)[1-9][0-9]{8}$" required>
+      <label for="cp"></label>
+      <input type="text" name="cp" id="cp" placeholder="code postal" required>
+      <label for="adress"></label>
+      <input type="text" name="adress" id="adress" placeholder="adresse" required>
+      <label for="ville"></label>
+      <input type="text" name="ville" id="ville" placeholder="ville" required>
+      <p class="check">
+        <input type="checkbox">
+        faire de cette adresse mon adresse par défaut</p>
+      </p>
+      <!---<input type="submit" value="Utiliser cette adresse">---->
+      <button class="btn_link" type="submit"><a href="validerLaCommande.html"> Utiliser cette adresse</a></button>
+    </form>
+  </body>
+
+</html>
